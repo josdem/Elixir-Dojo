@@ -1,0 +1,37 @@
+* Buscar la arquitectura del elixir stack
+
+$ erl -version
+Erlang (SMP,ASYNC_THREADS) (BEAM) emulator version 7.0
+
+$ erl
+Erlang/OTP 18 [erts-7.0] [source] [64-bit] [smp:4:4] [async-threads:10] [kernel-poll:false]
+
+Eshell V7.0  (abort with ^G)
+1>
+
+* OTP es el conjunto de bibliotecas del framework (Open Telecom Platform)
+* erts Erlang BEAM
+* Esta compilado para 64 bits
+* smp Symetric Multiprocessing (Cuantos procesadores hay en la maquina)
+* 2 Threads para procesos internos y uno para cada procesador [async-threads]
+* [hipe] Compila el programa el Elixir en lenguaje maquina y ya no es interpretado por la BEAM
+
+----
+
+* Cntrl + G
+ y q hace un gracefull shutdown
+
+iex Corre unstrucciones de elixir
+* En elixir hay modulos y funciones
+$ mix permite
+  * crear un proyecto
+  * compilar
+  * correr pruebas
+  * manejar la versiones
+  * generar el paquete que va a produccion
+
+La maquina virtual BEAM ocupa 12MB
+* Todos los archivos que son exs son pensados para ser ejecutados
+* Si no termina en S se va a compilar en codigo de bytes y son extension beam
+* En elixir hay expresiones una funcion va a devolver el ultimo valor dentro de ella.
+* Una expresion siempre devuelve un valor
