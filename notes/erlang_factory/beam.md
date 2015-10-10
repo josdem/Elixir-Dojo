@@ -25,12 +25,14 @@ Cosas importantes del BEAM
   * Espacio para binarios grandes(64 bites)
 
 ### Heap del proceso
+
 * Permite recolectar cada proceso de manera independiente
 * El colector de basura trata cada proceso por separado.
 * Los procesos pueden terminar y no pasar por el recolector de basura.
 *
 
 ### Colector de basura
+
 * 2 espacios o zonas la nueva y la vieja
 * Los datos nuevos se van a la memoria nueva
 
@@ -39,3 +41,9 @@ El diseño de la BEAM es difenrentes a otras VM conocidas.
 El diseño de la BEAM está pensando en aislamiento, tolerante a fallos, baja latencia y alta disponibilidad.
 Erlang funciona muy parecido a un concepto muy conocido por todos Internet.
 
+### Preguntas
+
+* Norberto usa FSB como SO
+* Se guarda un HEAP global del sistema operativo
+* Si tienes un binario grande, lo saca del proceso y te pasa el apuntador.
+* El truco es saber cuando usar un proceso y cuando debes usar una funcion.
