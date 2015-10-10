@@ -5,6 +5,7 @@ Si quieres crear una app OTP conviene crear un Application Callback
 
 Si quiren hacer algo que saben que se va a tardar se debe usar un Task.
 y normalmente se crea un loop con recursion para recibir mensajes y procésandolos
+Puedes agregar un task a un supervisor
 
 Lo que se debe usar en el caso anterior de manera apropiada es un Gen server
 
@@ -31,7 +32,16 @@ handle_cast y se procesa de forma asíncrona
 regresa
 :noreply, state y no importa que se reciba respuesta
 
+Para agregar una app en phoenix
+es agregar la dependencia
+agregar el mix de la aplicacion
 
+OPT Design priciples
+Elixir introduction
+Learn you some erlang from great good
+Elixir and OTP guidebook
+Misiva es Open Source
+Leer cowboy
 
 
 
